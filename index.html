@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallory Antomarchi - Data Analyst | Dashboard Development & Analytics Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Mallory Antomarchi</h3>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Data Analyst</h1>
+                <h2 class="hero-subtitle">Transforming Complex Data into Strategic Business Insights</h2>
+                <p class="hero-description">
+                    Experienced data analyst with expertise in building interactive dashboards, predictive analytics, and data-driven optimization. 
+                    Proven track record of improving operational efficiency by 30% and driving 5% increases in ROI through strategic data analysis.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="data-visualization">
+                    <canvas id="heroChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        As a dedicated data analyst with experience across multiple industries, I specialize in building 
+                        data-driven solutions that enhance operational performance and strategic decision-making. My background 
+                        includes freelance data analysis, search engine optimization analytics, and project management.
+                    </p>
+                    <p>
+                        I have successfully built over 20 interactive dashboards, improved operational efficiency by 30%, 
+                        and led teams of 20+ analysts while maintaining data integrity and translating complex analytics 
+                        into actionable business strategies.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-item">
+                        <h3>30%</h3>
+                        <p>Efficiency Improvement</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>20+</h3>
+                        <p>Dashboards Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Credit Card Default Analysis -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="project-tag">Featured</span>
+                    </div>
+                    <h3>Credit Card Default Prediction</h3>
+                    <p>Comprehensive analysis of 30,000+ credit card clients to predict default probability using Python, Pandas, and advanced statistical methods - demonstrating financial risk assessment capabilities.</p>
+                    <div class="project-highlights">
+                        <span class="highlight">Risk Assessment</span>
+                        <span class="highlight">Python & Pandas</span>
+                        <span class="highlight">Statistical Analysis</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">30K</span>
+                            <span class="metric-label">Records</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-primary" onclick="openProjectModal('credit-analysis')">View Details</button>
+                        <a href="#" class="btn btn-outline">Download Report</a>
+                    </div>
+                </div>
+
+                <!-- Interactive Dashboard Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Interactive Dashboard Development</h3>
+                    <p>Built 20+ interactive dashboards for performance monitoring and KPI tracking, reducing manual reporting time by 30% and improving operational efficiency.</p>
+                    <div class="project-highlights">
+                        <span class="highlight">Tableau</span>
+                        <span class="highlight">KPI Monitoring</span>
+                        <span class="highlight">Automation</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">20+</span>
+                            <span class="metric-label">Dashboards</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-primary" onclick="openProjectModal('dashboard-development')">View Details</button>
+                        <a href="#" class="btn btn-outline">View Examples</a>
+                    </div>
+                </div>
+
+                <!-- Search Engine Analytics Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search Engine Analytics & Team Leadership</h3>
+                    <p>Led a team of 20 search analysts to evaluate French-language queries, improving search accuracy by 20% and reducing analyst onboarding time by 40%.</p>
+                    <div class="project-highlights">
+                        <span class="highlight">Team Leadership</span>
+                        <span class="highlight">Quality Enhancement</span>
+                        <span class="highlight">Performance Optimization</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">20%</span>
+                            <span class="metric-label">Accuracy Gain</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">40%</span>
+                            <span class="metric-label">Training Reduction</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn btn-primary" onclick="openProjectModal('search-analytics')">View Details</button>
+                        <a href="#" class="btn btn-outline">Case Study</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications" style="padding: var(--space-20) 0; background-color: var(--gray-50);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Recent Certifications</h2>
+            <div class="certifications-container">
+                <div class="certifications-grid">
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-content">
+                            <div class="cert-icon google">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Google Data Analytics</h4>
+                                <p>Professional Certificate</p>
+                                <span class="cert-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-content">
+                            <div class="cert-icon ibm">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>IBM Data Science</h4>
+                                <p>Professional Certificate</p>
+                                <span class="cert-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-content">
+                            <div class="cert-icon ai">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>Generative AI Engineering</h4>
+                                <p>IBM Professional Certificate</p>
+                                <span class="cert-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-content">
+                            <div class="cert-icon vanderbilt">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="cert-info">
+                                <h4>AI Agent Developer</h4>
+                                <p>Vanderbilt University</p>
+                                <span class="cert-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-chart-bar"></i> Data Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python & Pandas</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL & Databases</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Microsoft Excel</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Data Science (IBM Certified)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Generative AI Engineering</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Predictive Analytics</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-chart-line"></i> Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Tableau</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Matplotlib/Seaborn</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Power BI</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Ready to transform your data into insights?</h3>
+                    <p>I'm always interested in discussing new opportunities in data analytics, dashboard development, and strategic business intelligence.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>mantomarchi300@outlook.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 6 24 67 99 72</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nice, France</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
